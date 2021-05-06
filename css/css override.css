@@ -2411,6 +2411,22 @@ a {
   font-size: 1.3em;
   font-weight: 600;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  #timeline .timeline-movement .timeline-item .timeline-panel {
+    height: 380px;
+  }
+}
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+#timeline .timeline-movement .timeline-item .timeline-panel {
+    height: 380px;
+  }
+}
 @media only screen and (min-width: 600px) {
   #timeline .timeline-movement .timeline-item .timeline-panel {
     height: 380px;
