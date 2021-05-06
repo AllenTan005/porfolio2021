@@ -2416,7 +2416,8 @@ a {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
   #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 380px;
+    height: 480px;
+    width: 300px;	  
   }
 }
 @media screen 
@@ -2424,12 +2425,13 @@ a {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
 #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 380px;
+    height: 480px;
+ width: 300px;	
   }
 }
 @media only screen and (min-width: 600px) {
   #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 380px;
+    height: 480px;
   }
   .rectangle2 {
     display: none;
@@ -2447,7 +2449,7 @@ a {
 }
 @media only screen and (max-width: 600px) {
   #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 380px;
+    height: 480px;
   }
   .rectangle2 {
     display: none;
