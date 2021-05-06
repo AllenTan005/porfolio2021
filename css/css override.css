@@ -2413,7 +2413,7 @@ a {
 }
 @media only screen and (min-width: 600px) {
   #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 348px;
+    height: 380px;
   }
   .rectangle2 {
     display: none;
@@ -2431,7 +2431,7 @@ a {
 }
 @media only screen and (max-width: 600px) {
   #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 348px;
+    height: 380px;
   }
   .rectangle2 {
     display: none;
