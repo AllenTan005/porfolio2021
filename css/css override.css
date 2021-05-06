@@ -2411,5 +2411,77 @@ a {
   font-size: 1.3em;
   font-weight: 600;
 }
+@media only screen and (min-width: 600px) {
+  #timeline .timeline-movement .timeline-item .timeline-panel {
+    height: 348px;
+  }
+  .rectangle2 {
+    display: none;
+  }
+  .rectangle {
+    display: none;
+  }
+  #myphoto {
+    margin-top: 750px;
+    margin-left: -250px;
+    z-index: 7;
+    border: 1px solid #f3e9e4;
+    background-color: #f3e9e4;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #timeline .timeline-movement .timeline-item .timeline-panel {
+    height: 348px;
+  }
+  .rectangle2 {
+    display: none;
+  }
+  .rectangle {
+    display: none;
+  }
+  #myphoto {
+    margin-top: 780px;
+    margin-left: -250px;
+    z-index: 7;
+    border: 1px solid #f3e9e4;
+    background-color: #f3e9e4;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #timeline .timeline-movement .timeline-item .timeline-panel {
+    height: 210px;
+  }
+
+  .rectangle2 {
+    position: absolute;
+    display: block;
+    top: 340px;
+    right: 363px;
+    z-index: 0;
+    height: 200px;
+    width: 400px;
+    background-color: #ebdbd2;
+  }
+  .rectangle {
+    position: absolute;
+    display: block;
+    top: 35px;
+    right: -50px;
+    z-index: -1;
+    height: 600px;
+    width: 350px;
+    background-color: #ebdbd2;
+  }
+
+  #myphoto {
+    margin-top: -15px;
+    margin-left: -10px;
+    z-index: 7;
+    border: 1px solid #f3e9e4;
+    background-color: #f3e9e4;
+  }
+}
+@media only screen and (min-width: 1200px) {
+}
 
 /**************Who View Your Profile CSS End Here****************/
