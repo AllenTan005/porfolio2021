@@ -427,8 +427,7 @@ a {
 }
 
 /*timeline css*/
-/**************Animation File Start Here (animate.css)****************/
-/**************Copy and Save this in another file (animate.css)****************/
+
 
 /* Animation Delay */
 .d01 {
@@ -631,7 +630,7 @@ a {
   animation-name: flash;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 
 @keyframes pulse {
   from {
@@ -801,7 +800,7 @@ a {
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 
 @keyframes wobble {
   from {
