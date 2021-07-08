@@ -260,6 +260,7 @@ h3.heading {
   transform: scale(1.1);
   filter: brightness(80%);
 }
+
 /*react-section*/
 #section-react {
   position: relative;
@@ -270,7 +271,6 @@ h3.heading {
   height: 50%;
   pointer-events: none;
 }
-
 
 /*section (thankyou)*/
 #section-thankyou {
@@ -351,7 +351,8 @@ a {
 }
 
 /*timeline css*/
-
+/**************Animation File Start Here (animate.css)****************/
+/**************Copy and Save this in another file (animate.css)****************/
 
 /* Animation Delay */
 .d01 {
@@ -475,17 +476,6 @@ a {
   opacity: 1;
 }
 
-/***CSS Animations****/
-@charset "UTF-8";
-
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2017 Daniel Eden
- */
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -554,7 +544,7 @@ a {
   animation-name: flash;
 }
 
-
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes pulse {
   from {
@@ -723,8 +713,6 @@ a {
 .animated.tada {
   animation-name: tada;
 }
-
-
 
 @keyframes wobble {
   from {
@@ -2345,27 +2333,78 @@ a {
   font-size: 1.3em;
   font-weight: 600;
 }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 600px) {
   #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 480px;
-    width: 300px;
-    margin-left: -61px;
-}	  
+    height: 648px;
+  }
+  .rectangle2 {
+    display: none;
+  }
+  .rectangle {
+    display: none;
+  }
+  #myphoto {
+    margin-top: 750px;
+    margin-left: -250px;
+    z-index: 7;
+    border: 1px solid #f3e9e4;
+    background-color: #f3e9e4;
   }
 }
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) {
-#timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 480px;
-    width: 300px;	
-    margin-left: -61px;
-}
+@media only screen and (max-width: 820px) {
+  #timeline .timeline-movement .timeline-item .timeline-panel {
+    height: 648px;
   }
+
+  .rectangle2 {
+    display: none;
+  }
+  .rectangle {
+    display: none;
+  }
+  #myphoto {
+    margin-top: 780px;
+    margin-left: -250px;
+    z-index: 7;
+    border: 1px solid #f3e9e4;
+    background-color: #f3e9e4;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #timeline .timeline-movement .timeline-item .timeline-panel {
+    height: 210px;
+  }
+
+  .rectangle2 {
+    position: absolute;
+    display: block;
+    top: 340px;
+    right: 363px;
+    z-index: 0;
+    height: 200px;
+    width: 400px;
+    background-color: #ebdbd2;
+  }
+  .rectangle {
+    position: absolute;
+    display: block;
+    top: 35px;
+    right: -50px;
+    z-index: -1;
+    height: 600px;
+    width: 350px;
+    background-color: #ebdbd2;
+  }
+
+  #myphoto {
+    margin-top: -15px;
+    margin-left: -10px;
+    z-index: 7;
+    border: 1px solid #f3e9e4;
+    background-color: #f3e9e4;
+  }
+}
+@media only screen and (min-width: 1200px) {
 }
 /*RwD section*/
 @media (max-width: 570px) {
@@ -2397,7 +2436,7 @@ a {
     transition: 0.5s;
     background: rgba(0, 0, 0, 0) !important;
   }
- .card-img-top {
+  .card-img-top {
     width: 85%;
     height: 70%;
   }
@@ -2469,81 +2508,4 @@ a {
     filter: brightness(80%);
   }
 }
-
-
-@media only screen and (min-width: 600px) {
-  #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 580px;
-    margin-left: -65px;
-  }
-  .rectangle2 {
-    display: none;
-  }
-  .rectangle {
-    display: none;
-  }
-  #myphoto {
-    margin-top: 750px;
-    margin-left: -250px;
-    z-index: 7;
-    border: 1px solid #f3e9e4;
-    background-color: #f3e9e4;
-  }
-}
-@media only screen and (max-width: 820px) {
-  #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 580px;
-   margin-left: -65px;	  
-  }
-  .rectangle2 {
-    display: none;
-  }
-  .rectangle {
-    display: none;
-  }
-  #myphoto {
-    margin-top: 780px;
-    margin-left: -250px;
-    z-index: 7;
-    border: 1px solid #f3e9e4;
-    background-color: #f3e9e4;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #timeline .timeline-movement .timeline-item .timeline-panel {
-    height: 210px;
-  }
-
-  .rectangle2 {
-    position: absolute;
-    display: block;
-    top: 340px;
-    right: 363px;
-    z-index: 0;
-    height: 200px;
-    width: 400px;
-    background-color: #ebdbd2;
-  }
-  .rectangle {
-    position: absolute;
-    display: block;
-    top: 35px;
-    right: -50px;
-    z-index: -1;
-    height: 600px;
-    width: 350px;
-    background-color: #ebdbd2;
-  }
-
-  #myphoto {
-    margin-top: -15px;
-    margin-left: -10px;
-    z-index: 7;
-    border: 1px solid #f3e9e4;
-    background-color: #f3e9e4;
-  }
-}
-@media only screen and (min-width: 1200px) {
-}
-
 /**************Who View Your Profile CSS End Here****************/
